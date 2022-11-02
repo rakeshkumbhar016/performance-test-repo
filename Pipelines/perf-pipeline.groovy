@@ -8,7 +8,7 @@ node {
                 userRemoteConfigs: [
                         [
                                 url:"https://rakeshkumbhar016@bitbucket.org/rakeshkumbhar016/performance-test-repo.git",
-                                credentialsId: "Rakesh Kumbhar"
+                                credentialsId: "perf-user"
                         ]
                 ],
                 branches: [[name: "main"]]
