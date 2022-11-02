@@ -7,7 +7,7 @@ node {
                 $class: 'GitSCM',
                 userRemoteConfigs: [
                         [
-                                url:"https://rakeshkumbhar016@bitbucket.org/rakeshkumbhar016/performance-test-repo.git",
+                                url:"https://github.com/rakeshkumbhar016/performance-test-repo.git",
                                 credentialsId: "CICDPerf-User"
                         ]
                 ],
