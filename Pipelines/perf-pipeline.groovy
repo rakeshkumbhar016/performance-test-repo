@@ -1,3 +1,6 @@
+import jenkins.model.*
+jenkins = Jenkins.instance
+
 #!/usr/bin/env groovy
 node {
 
