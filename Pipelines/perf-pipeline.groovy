@@ -15,8 +15,8 @@ node {
         ], poll: false
     }
 
-    stage('Complete any setup steps') {
-        echo "Complete set-up steps"
+    stage('Start any setup steps') {
+        echo "Start set-up steps"
        // echo "${octoperf_test_value}"
     }
 
