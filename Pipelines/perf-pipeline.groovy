@@ -23,8 +23,7 @@ node {
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}/scripts") {
             bat "C:/JMeter_Tool/apache-jmeter-5.4.1/bin/jmeter.bat -n -t Site_Manager_All_API's.jmx -l SiteManager2.csv -e -o SiteManagerReport"
-          //  -Joptestvalue=${octoperf_test_value
-        }
+          //  -Joptestvalue=${octoperf_test_value}
     }
 }
     stage('Analyse Results') {
