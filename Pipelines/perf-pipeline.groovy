@@ -26,8 +26,21 @@ node {
           //  -Joptestvalue=${octoperf_test_value
         }
     }
-
+}
     stage('Analyse Results') {
         echo "Analyse results"
     }
+    
+    stage('Generate Performance Tred') {
+        post{
+            always{
+                dir("/target/jmeter/results/"){
+                    sh 'pwd'
+                      perfReport '20210723-SiteManager2.csv'
+                }
+            
+            }
+        }
+        }
+       
 }
